@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on css selectors</title>
+    <style>
+        h1 {
+            border: 2px solid grey;
+            background-color: red;
+            text-align: center;
+        }
+
+        p {
+            color: blue;
+
+
+        }
+
+        div p {
+            color: orange;
+        }
+
+        .directselect>p {
+            /* the code is on line 41 */
+            color: purple;
+        }
+        ol + li{
+            color: rgb(160, 150, 60);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is more on css selectors.</h1>
+    <p>this is the p outside the div .
+        <strong>the color is blue.</strong>
+    </p>
+    <div class="row">
+        <ul>
+            <li class="item">
+                <p>this is the pragraph under div.row ul li p and the orange color will be applicable to it. </p>
+            </li>
+            <li>This will not be affacted by any color.</li>
+        </ul>
+        <p>
+            This is the p inside the div.row
+            <strong> the color is orange.</strong>
+        </p>
+        <div class="directselect">
+            <p>This is the direc child of the div.directselect. and my color is purple </p>
+        </div>
+        <ol>
+            <li>this will be affectd and color will be khaki  and it is affected because the previous element was ol.</li>
+            <li> this is second </li>
+        </ol>
+    </div>
+</body>
+
+</html>

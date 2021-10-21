@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em rem and vh </title>
+  
+
+    
+    <style>  
+    html{
+         font-size: 25px;
+    }
+    .container{
+        border: 2px solid red;
+        height: 100vh;
+        width: 100vw;
+    }
+    #headcontainer{
+        font-size: 10px;
+        text-align: center;
+        margin:0px;
+        padding:0px;
+
+
+    }
+    #first{
+        margin:0px;
+        font-size: 10em; 
+        /* em will make the time of it parent unit if it is  10 em  and parent font size is 10 px then it will be 10*10 = 100px */
+        color:purple;
+    }
+    #second{
+        font-size: 3rem;
+    }
+    #third{
+      
+
+    }
+    </style>
+</head>
+<body>
+    <div class="container" id="headcontainer">
+
+ 
+        <h1 class="header1" id="first">This is header </h1>
+
+        <h1 class="header1" id="second">this second header</h1>
+    
+        <h1 class="header1" id="third">this is third header.</h1>
+
+    </div>
+
+    
+</body>
+</html> 
