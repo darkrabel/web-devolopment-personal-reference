@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-rows: 1fr 2fr 5fr;
+            grid-auto-rows: 4fr;
+            grid-template-columns: 1fr 2fr;
+            grid-gap: 1rem;
+            grid-template-columns : repeat(4, 2fr);
+
+
+        }
+        .box{
+            background-color: red;
+            border: 2px solid black;
+            /* margin:20px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box" id="box-1">This is a box!</div>
+        <div class="box" id="box-2">This is a box!</div>
+        <div class="box" id="box-3">This is a box!</div>
+        <div class="box" id="box-4">This is a box!</div>
+        <div class="box" id="box-5">This is a box!</div>
+        <div class="box" id="box-6">This is a box!</div>
+        <div class="box" id="box-7">This is a box!</div>
+        <div class="box" id="box-8">This is a box!</div>
+        <div class="box" id="box-9">This is a box!</div>
+        <div class="box" id="box-10">This is a box!</div>
+    </div>
+</body>
+</html>
