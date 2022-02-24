@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manupuliting dom</title>
+    <style>
+        *{
+            background-color: black;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div id="main"  class="container">
+        <ul>
+            <li>Home </li>
+            <li>about</li>
+            <li>tell us</li>
+            <li>contact us</li>
+        </ul>
+        <div id="another_conatianer" class="container">
+            Lorem ipsum dolor sit amet.
+        </div>
+    </div>
+    <script>
+        let main = document.getElementById('main');
+        console.log(main)
+        //this way can select and  change the  content of element by id name 
+
+
+        let containers = document.getElementsByClassName('container');
+        console.log(containers);
+        console.log(containers[1]);
+        //this way we can select and  change the  content of element by class name;
+
+        let css_sel = document.querySelector('.container');
+        console.log(css_sel);
+        //this way we can select and change the content of css class.
+
+    </script>
+</body>
+</html>
