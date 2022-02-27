@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>working wih json</title>
+    
+
+</head>
+<body>
+    <div class="container">
+
+    </div>
+
+</body>
+<script>
+   let jesonobj ={
+       name:"faheem",
+       age:"10",
+       food:"chicken"
+
+   };
+   let myjsongstr = JSON.stringify(jesonobj);
+
+//    this will make all object to string  
+   console.log(jesonobj);
+   console.log(myjsongstr);
+
+   var len = myjsongstr.length;
+   myjsongstr = myjsongstr.replace('faheem','farhan');
+
+
+
+   newjsonobj = JSON.parse(myjsongstr);
+   console.log(newjsonobj);
+//    this will convert string to object. 
+   
+
+</script>
+</html>
